@@ -3,13 +3,13 @@ import { Rutas } from './routing/rutas'
 
 
 function App() {
-  
+
   return (
     <>
-      <div className='App'>
-        <h1>Blog con react</h1>
+      <div className='layout'>
+        <Rutas />
       </div>
-      <Rutas/>
+
     </>
   )
 }
