@@ -13,20 +13,16 @@ function App() {
   };
 
   return (
-    <> {/* 
+    <> 
       <div className='layout'>
         {mostrarRutas ? ( 
-          <Router>
             <Rutas/>
-          </Router>
         ):(
-          <Inicio onIngresar={handleIngresar} />
+          <Router>
+            <Inicio onIngresar={handleIngresar}/>
+          </Router>
         )}
         
-      </div>*/}
-
-      <div className='layout'>
-        <Rutas/>
       </div>
 
     </>
