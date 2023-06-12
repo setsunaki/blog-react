@@ -23,10 +23,6 @@ export const Rutas = () => {
                     <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
             </section>
-
-            {/* Barra lateral*/}
-            <Sidebar/>
-
             {/* Footer */}
             <Footer/>
         </BrowserRouter>
