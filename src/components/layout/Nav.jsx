@@ -6,7 +6,7 @@ export const Nav = () => {
   return (
     <nav className="nav">
       <ul>
-        <li><NavLink to={"/articulos"}>algun nombre</NavLink></li>
+        <li><NavLink to={"/inicio"}>Ultimos</NavLink></li>
         <li><NavLink to={"/crear-articulos"}>Publicar</NavLink></li>
       </ul>
     </nav>

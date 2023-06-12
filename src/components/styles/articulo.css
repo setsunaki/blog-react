@@ -1,0 +1,70 @@
+.detalleArticulo{
+    background-color: aquamarine;
+}
+.Articulo{
+    background: grey;
+    height: 300px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.articuloImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.articuloImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.detalleHeader {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 80px;
+    border-left: 8px solid #e75fbc;
+    border-radius: 5px;
+    width: 60%;
+    margin: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.titleArticulo {
+    font-size: 20px;
+    margin-bottom: 2px;
+    color: white;
+}
+
+.articuloFecha {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+}
+  
+.articuloFecha span {
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 5px;
+    color: white;
+}

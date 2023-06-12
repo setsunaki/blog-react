@@ -1,24 +1,18 @@
 .header{
-    grid-area: header;
+  grid-area: header;
     
-    background: hsla(172, 85%, 74%, 1);
+  background: hsla(172, 85%, 74%, 1);
   
-    background: linear-gradient(90deg, hsla(172, 85%, 74%, 1) 0%, hsla(319, 74%, 64%, 1) 100%);
+  background: linear-gradient(90deg, hsla(172, 85%, 74%, 1) 0%, #e75fbc 100%);
   
-    background: -moz-linear-gradient(90deg, hsla(172, 85%, 74%, 1) 0%, hsla(319, 74%, 64%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(172, 85%, 74%, 1) 0%, hsla(319, 74%, 64%, 1) 100%);
   
-    background: -webkit-linear-gradient(90deg, hsla(172, 85%, 74%, 1) 0%, hsla(319, 74%, 64%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(172, 85%, 74%, 1) 0%, hsla(319, 74%, 64%, 1) 100%);
   
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#83F5E5", endColorstr="#E761BD", GradientType=1 );
-    text-align: left;
-    font-style: italic;
+  text-align: left;
+  font-style: italic;
   
-    display: flex;
-    justify-content: center;
-  }
-  
-  
-  .header h1{
-    margin-left: 15px;
-    margin-top: 30px;
-  }
+  display: flex;
+  justify-content: center;
+}
