@@ -22,6 +22,13 @@ body{
   grid-template-rows: 100px 70px auto 70px;
 }
 
+.content{
+  grid-area: content;
+  background: #f6f7f9;
+  margin: 5px 10px;
+  border-radius: 10px;    
+}
+
 /*ESTILOS BARRA LATERAL*/
 
 .lateral{

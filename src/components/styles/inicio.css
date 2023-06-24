@@ -1,14 +1,8 @@
-.content{
-    grid-area: content;
-    background: #f6f7f9;
-    margin: 5px 10px;
-    
-}
-
 .headerInicio {
     display: flex;
     justify-content: space-between;
     align-items: center; 
+    margin: 0 15px;
 }
 
 .headerInicio h3 {
@@ -98,5 +92,11 @@
       flex-basis: 100%; 
       max-width:max-content;
       height: auto;
+    }
+
+    .headerInicio {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 15px;
     }
 }

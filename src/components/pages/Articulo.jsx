@@ -26,7 +26,44 @@ export const Articulo = () => {
           <main>
             <section>
               <div>
-                <p></p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
+                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
+                  Dolorum neque, quidem modi iusto quo optio.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
+                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
+                  Dolorum neque, quidem modi iusto quo optio.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
+                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
+                  Dolorum neque, quidem modi iusto quo optio.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
+                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
+                  Dolorum neque, quidem modi iusto quo optio.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
+                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
+                  Dolorum neque, quidem modi iusto quo optio.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
+                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
+                  Dolorum neque, quidem modi iusto quo optio.
+                </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
+                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
+                  Dolorum neque, quidem modi iusto quo optio.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
+                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
+                  Dolorum neque, quidem modi iusto quo optio.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
+                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
+                  Dolorum neque, quidem modi iusto quo optio.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
+                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
+                  Dolorum neque, quidem modi iusto quo optio.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
+                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
+                  Dolorum neque, quidem modi iusto quo optio.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
+                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
+                  Dolorum neque, quidem modi iusto quo optio.
+                </p>
               </div>
             </section>
           </main>
