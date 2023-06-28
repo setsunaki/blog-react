@@ -1,7 +1,28 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import { Global } from '../../helpers/Global'
+import { Peticion } from '../../helpers/Peticion'
+
 import '../styles/articulo.css'
 
 export const Articulo = () => {
+
+  const [articulo, setArticulo] = useState([]);
+  const params = useParams();
+
+  useEffect(() =>{
+    conseguirArticulo();
+  }, [])
+
+  const conseguirArticulo = async() =>{
+    const {datos, cargando} = await Peticion(Global.url+"articulo/"+params.id,"GET");
+    console.log(datos);
+    if(datos.status === "success"){
+      setArticulo(datos.encontrado);
+    }
+  }
+
   return (
     <>
       <div className='detalleArticulo'>
@@ -9,14 +30,14 @@ export const Articulo = () => {
           <article>
             <header className='ArticuloHeader'>
               <div className='detalleHeader'>
-                <h1 className='titleArticulo'>Desarrollo web</h1>
+                <h1 className='titleArticulo'>{articulo.titulo}</h1>
                 <div className='articuloFecha'>
-                  <span>Setsunaki</span>
-                  <span>12-06-2023</span>
+                  <span>{articulo.autor}</span>
+                  <span>{articulo.fecha}</span>
                 </div>
               </div>
               <figure className='articuloImg'>
-                <img src='https://depor.com/resizer/x8BOWblrz58cnhq3Sirk3covoLk=/1200x800/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/DAYT2F5NUNB7VPAFKUPHNDXVQA.jpg' />
+                <img src={Global.url+"imagen/"+articulo.imagen}/>
               </figure>
             </header>
           </article>
@@ -26,44 +47,7 @@ export const Articulo = () => {
           <main>
             <section>
               <div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
-                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
-                  Dolorum neque, quidem modi iusto quo optio.
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
-                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
-                  Dolorum neque, quidem modi iusto quo optio.
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
-                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
-                  Dolorum neque, quidem modi iusto quo optio.
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
-                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
-                  Dolorum neque, quidem modi iusto quo optio.
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
-                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
-                  Dolorum neque, quidem modi iusto quo optio.
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
-                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
-                  Dolorum neque, quidem modi iusto quo optio.
-                </p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
-                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
-                  Dolorum neque, quidem modi iusto quo optio.
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
-                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
-                  Dolorum neque, quidem modi iusto quo optio.
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
-                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
-                  Dolorum neque, quidem modi iusto quo optio.
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
-                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
-                  Dolorum neque, quidem modi iusto quo optio.
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
-                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
-                  Dolorum neque, quidem modi iusto quo optio.
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium at, 
-                  odit sint veniam molestias repudiandae hic facere laborum officia sed, ex rerum. 
-                  Dolorum neque, quidem modi iusto quo optio.
-                </p>
+                <p>{articulo.contenido}</p>
               </div>
             </section>
           </main>

@@ -1,28 +1,54 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/inicio.css'
+import { Global } from '../../helpers/Global'
+import { Peticion } from '../../helpers/Peticion'
 
 export const Inicio = () => {
+
+  const [ultimos, setUltimos] = useState([]);
+
+  useEffect(() =>{
+    conseguirUltimos();
+  }, [])
+
+  const conseguirUltimos = async() =>{
+    const {datos, cargando} = await Peticion(Global.url+"articulos/true","GET");
+    if(datos.status === "success"){
+      setUltimos(datos.articulo);
+    }
+  }
+
   return (
     <>
       <section id="content" className="content">
         <header className='headerInicio'>
           <h3>Ultimas Publicaciones</h3>
           <div className='verMas'>
-          <Link to={"/articulos"}>Ver mas</Link>
+            <Link to={"/articulos"}>Ver mas</Link>
           </div>
         </header>
         <div className='listaArticulo'>
+
           {/* REPETIR ESTO*/}
-          <article className="articulo-item">
-            <header className='mask'>
-              <Link to={"/detalle-articulo"}><h2 className="title">Desarrollo web</h2></Link>
-            </header>
-            <figure className='imgArticulo'>
-              <img src='https://depor.com/resizer/x8BOWblrz58cnhq3Sirk3covoLk=/1200x800/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/DAYT2F5NUNB7VPAFKUPHNDXVQA.jpg' />
-            </figure>
-          </article>
+
+          {ultimos.map(ultimo => {
+            return (
+              <article key={ultimo._id} className="articulo-item">
+                <header className='mask'>
+                <Link to={"/articulo/"+ultimo._id}><h2 className="titleArticulo">{ultimo.titulo}</h2></Link>
+
+                </header>
+                <figure className='imgArticulo'>
+                  <img src={Global.url+"imagen/"+ultimo.imagen} />
+                </figure>
+              </article>
+            );
+          })}
+
         </div>
+
       </section>
     </>
   )
