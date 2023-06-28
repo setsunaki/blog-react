@@ -37,7 +37,8 @@ export const Articulo = () => {
                 </div>
               </div>
               <figure className='articuloImg'>
-                <img src={Global.url+"imagen/"+articulo.imagen}/>
+                {/*<img src={Global.url+"imagen/"+articulo.imagen}/>*/}
+                <img src={articulo.imagen}/>
               </figure>
             </header>
           </article>
@@ -49,6 +50,7 @@ export const Articulo = () => {
               <div>
                 <p>{articulo.contenido}</p>
               </div>
+              
             </section>
           </main>
         </div>

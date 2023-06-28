@@ -19,17 +19,17 @@ export const Articulos = () => {
     const {datos, cargando} = await Peticion(Global.url+"articulos","GET");
     if(datos.status === "success"){
       setArticulos(datos.articulo);
+
     }
   }
+
+  console.log(articulos);
 
   return (
     <>
     <section id="content" className="content">
       <header className='headerInicio'>
-        <h3>Ultimas Publicaciones</h3>
-        <div className='verMas'>
-          <Link to={"/articulos"}>Ver mas</Link>
-        </div>
+        <h3>Publicaciones</h3>
       </header>
       <div className='listaArticulo'>
 
@@ -43,7 +43,8 @@ export const Articulos = () => {
 
               </header>
               <figure className='imgArticulo'>
-                <img src={Global.url+"imagen/"+articulo.imagen} />
+              {articulo.imagen ==="default.png" ? <img src="https://rare-gallery.com/mocahbig/394707-wallpaper-error-404-anime-4k-hd.jpg"/>
+              : <img src={articulo.imagen}/>}
               </figure>
             </article>
           );

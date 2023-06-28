@@ -8,7 +8,9 @@ export const Nav = () => {
       <nav className="nav">
         <h1>セツナキ</h1>
         <div className="search-bar">
+          <form>
           <input type="text" placeholder="Publicacion, autor" />
+          </form>
         </div>
         <ul>
           <li><NavLink to={"/inicio"}>Ultimos</NavLink></li>

@@ -37,11 +37,14 @@ export const Inicio = () => {
             return (
               <article key={ultimo._id} className="articulo-item">
                 <header className='mask'>
-                <Link to={"/articulo/"+ultimo._id}><h2 className="titleArticulo">{ultimo.titulo}</h2></Link>
-
+                  <Link to={"/articulo/"+ultimo._id}><h2 className="titleArticulo">{ultimo.titulo}</h2></Link>
+                  
                 </header>
                 <figure className='imgArticulo'>
-                  <img src={Global.url+"imagen/"+ultimo.imagen} />
+                  {/*<img src={Global.url+"imagen/"+ultimo.imagen} />*/}
+                  {ultimo.imagen ==="default.png" ? <img src="https://rare-gallery.com/mocahbig/394707-wallpaper-error-404-anime-4k-hd.jpg"/>
+                  : <img src={ultimo.imagen}/>}
+                  
                 </figure>
               </article>
             );

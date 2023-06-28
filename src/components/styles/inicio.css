@@ -15,12 +15,11 @@
 }
 
 .mask{
-    background-color: rgba(0, 0, 0, 0.1);
-    height: 80px;
+    background-color: rgba(0, 0, 0, 0.212);
+    height: 100px;
     border-left: 8px solid #e75fbc;
     border-radius: 5px;
     width: 75%;
-    position: absolute;
     margin: 35px 20px;
     padding: 0 10px;
     position: absolute;
