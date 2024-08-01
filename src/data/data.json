@@ -1,0 +1,40 @@
+[
+    {
+        "titulo":"Pondrán a una IA a traducir novelas ligeras",
+        "imgPortada":"https://somoskudasai.com/wp-content/uploads/2024/01/portada_japon-286.jpg",
+        "autor": "Setsunaki",
+        "fecha":"Agosto - 2024",
+        "contenido":[{
+            "mainParrafo":"Shogakukan, una de las editoriales más grandes de Japón, ha anunciado su entrada en el mercado norteamericano de novelas ligeras con el lanzamiento de una nueva aplicación para smartphones. La app, llamada “Novelous”, estará disponible en Estados Unidos y Canadá para finales de 2024, y contará con la traducción de 400 títulos de novelas ligeras en los próximos dos años. Este ambicioso proyecto se realizará en colaboración con Mantra, una startup especializada en traducción mediante inteligencia artificial (IA).",
+            "imgNota":"https://somoskudasai.com/wp-content/uploads/2024/08/image-2-1024x576.png",
+            "endParrafo":"Esta iniciativa responde a la creciente popularidad de las novelas ligeras fuera de Japón, particularmente en Norteamérica. La competencia con Kadokawa, que adquirió la editorial de novelas ligeras J-Novel Club en 2021, ha sido un factor importante en esta decisión. Desde la adquisición, Kadokawa ha experimentado un notable incremento en sus ingresos por ventas de novelas ligeras en la región, alcanzando una quinta parte de las ventas de manga."
+        }]
+       
+    },
+    {
+        "titulo":"El anime de NieR: Automata por fin arregla su animación",
+        "imgPortada":"https://somoskudasai.com/wp-content/uploads/2023/07/portada_nier-reincarnation-21-768x432.jpg",
+        "autor": "Setsunaki",
+        "fecha":"Agosto - 2024",
+        "contenido":[{
+            "mainParrafo":"La adaptación al anime de “NieR: Automata” ha sorprendido gratamente a los fanáticos con mejoras significativas en la calidad de la animación 3DCG en su versión Blu-ray, después de haber sido ampliamente criticada durante su transmisión en televisión. En las comparaciones de imágenes, a la izquierda se muestra la versión corregida del Blu-ray, mientras que a la derecha está la versión emitida en televisión antes de las correcciones. La diferencia es completamente notable, con una animación más fluida y detallada en la versión Blu-ray.",
+            "imgNota":"https://somoskudasai.com/wp-content/uploads/2024/07/a1-15-2048x772.jpg",
+            "endParrafo":"La serie, producida por A-1 Pictures, ha enfrentado varios desafíos a lo largo de su producción, incluyendo un mal cronograma de producción que afectó la calidad visual de algunos episodios durante su emisión inicial. Esto fue particularmente evidente en el primer episodio, que fue considerado por muchos como el peor de la serie debido a sus visuales poco inspiradores. Sin embargo, los comentarios recientes reflejan un notable incremento en la calidad, especialmente en las escenas con las unidades de vuelo, que se ven impresionantes en los episodios más recientes."
+        }]
+       
+    },
+    {
+        "titulo":"Siguen los éxitos para Alya Sometimes Hides Her Feelings in Russian",
+        "imgPortada":"https://somoskudasai.com/wp-content/uploads/2024/07/portada_alya2.jpg",
+        "autor": "Setsunaki",
+        "fecha":"Agosto - 2024",
+        "contenido":[{
+            "mainParrafo":"La producción de la adaptación al anime de las novelas ligeras “Alya Sometimes Hides Her Feelings in Russian“ ha emitido un comunicado entusiasta para los fans: «Gracias al apoyo de todos ustedes, se ha decidido una reimpresión masiva de todos los volúmenes de las novelas ligeras de ‘Alya Sometimes Hides Her Feelings in Russian’. Las ventas tanto de libros impresos como electrónicos en Japón y sus traducciones en otros países están aumentando explosivamente. Si aún no lo han leído, ¡aprovechen esta oportunidad para disfrutar de las novelas!».",
+            "imgNota":"https://somoskudasai.com/wp-content/uploads/2024/07/GTVBXnGacAAgnIg-1024x1024.jpg",
+            "endParrafo":"La adaptación al anime de esta obra, actualmente en emisión, ha sido un éxito rotundo, destacándose por sus diseños de personajes y la calidad de animación proporcionados por los estudios Doga Kobo. En particular, la personalidad de la protagonista, Alisa Mikhailovna Kujou, ha encantado a los fanáticos en Internet, convirtiéndose rápidamente en un ícono entre los seguidores del anime. El éxito del anime y el aumento de las ventas de las novelas ligeras en Japón y en todo el mundo muestran el gran interés y cariño del público por esta encantadora historia de romance y comedia. Con la reimpresión masiva de todos los volúmenes, tanto nuevos lectores como aquellos que desean completar su colección tendrán la oportunidad de sumergirse en el mundo de Alisa y Masachika, descubriendo las divertidas y tiernas interacciones que han hecho de esta obra un fenómeno global."
+        }]
+    }
+       
+
+
+]

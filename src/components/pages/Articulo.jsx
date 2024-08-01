@@ -1,27 +1,21 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react' 
 import { useParams } from 'react-router-dom'
-import { Global } from '../../helpers/Global'
-import { Peticion } from '../../helpers/Peticion'
+
 
 import '../styles/articulo.css'
+import data from "../../data/data.json"
 
 export const Articulo = () => {
+  const [articulo, setArticulo] = useState(null);
+  const { id } = useParams();
 
-  const [articulo, setArticulo] = useState([]);
-  const params = useParams();
+  useEffect(()=>{
+    const buscaArticulo = data[id];
+    setArticulo(buscaArticulo);
+  },[id]);
 
-  useEffect(() =>{
-    conseguirArticulo();
-  }, [])
-
-  const conseguirArticulo = async() =>{
-    const {datos, cargando} = await Peticion(Global.url+"articulo/"+params.id,"GET");
-    console.log(datos);
-    if(datos.status === "success"){
-      setArticulo(datos.encontrado);
-    }
-  }
+  if (!articulo) return <p>Cargando...</p>
+  
 
   return (
     <>
@@ -38,7 +32,7 @@ export const Articulo = () => {
               </div>
               <figure className='articuloImg'>
                 {/*<img src={Global.url+"imagen/"+articulo.imagen}/>*/}
-                <img src={articulo.imagen}/>
+                <img src={articulo.imgPortada}/>
               </figure>
             </header>
           </article>
@@ -47,10 +41,15 @@ export const Articulo = () => {
         <div className='datoArticulo'>
           <main>
             <section>
-              <div>
-                <p>{articulo.contenido}</p>
-              </div>
-              
+            <div>
+              {articulo.contenido.map((item, index) => (
+                <div key={index}>
+                  <p>{item.mainParrafo}</p>
+                  {item.imgNota && <img src={item.imgNota} alt="" />}
+                  <p>{item.endParrafo}</p>
+                </div>
+              ))}
+            </div>
             </section>
           </main>
         </div>

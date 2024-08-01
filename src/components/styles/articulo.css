@@ -48,7 +48,7 @@
 
 .titleArticulo {
     font-size: 20px;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
     color: white;
 }
 
@@ -61,8 +61,8 @@
   
 .articuloFecha span {
     margin-right: 10px;
-    font-size: 12px;
-    padding: 5px;
+    font-size: 15px;
+    padding: 2px;
     color: white;
 }
 
@@ -75,4 +75,9 @@
 .datoArticulo p {
     margin-bottom: 2.5rem;
     line-height: 1.9;
+    font-size: 20px;
+}
+
+.datoArticulo img {
+    max-width: 80%;
 }

@@ -5,6 +5,7 @@ import { Global } from '../../helpers/Global'
 import { Peticion } from '../../helpers/Peticion'
 
 import '../styles/articulos.css'
+import data from "../../data/data.json"
 
 
 export const Articulos = () => {
@@ -33,7 +34,7 @@ export const Articulos = () => {
       </header>
       <div className='listaArticulo'>
 
-        {/* REPETIR ESTO*/}
+        {/* REPETIR ESTO
 
         {articulos.map(articulo => {
           return (
@@ -49,7 +50,21 @@ export const Articulos = () => {
             </article>
           );
         })}
-
+        */}
+        {
+          data.map((item, id)=>{
+            return (
+              <article key={id} className="articulo-item">
+                <header className='mask'>
+                <Link to={`/articulo/${id}`}> <h2 className="titleArticulo">{item.titulo}</h2></Link>
+                </header>
+                <figure className='imgArticulo'>
+                  <img src={item.imgPortada}/>
+                </figure>
+              </article>
+            )
+          })
+        }
       </div>
 
     </section>
