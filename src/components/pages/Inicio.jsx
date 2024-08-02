@@ -21,6 +21,7 @@ export const Inicio = () => {
             primerosSeisArticulos.map((item, id) =>{
               return <article key={id} className="articulo-item">
                   <header className='mask'>
+                    <span>{item.categoria}</span>
                     <Link to={`/articulo/${id}`}> <h2 className="titleArticulo">{item.titulo}</h2></Link>
                   </header>
                   <figure className='imgArticulo'>

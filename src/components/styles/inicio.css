@@ -16,7 +16,7 @@
 
 .mask{
     background-color: rgba(0, 0, 0, 0.212);
-    height: 100px;
+    height: 120px;
     border-left: 8px solid #e75fbc;
     border-radius: 5px;
     width: 75%;
@@ -26,6 +26,20 @@
     bottom: 0;
     left: 0;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mask span{
+    background-color: white;
+    border-radius: 10%;
+    text-transform: uppercase;
+    padding: 3px 5px;
+    margin-top: 10px;
+    margin-right: 50%;
+    font-size: 12px;
 }
 
 .verMas a{
@@ -94,24 +108,30 @@
   margin: 10px;
   font-size: 20px;
   color: white;
+  padding: 0 10px;
 }
 
-
-@media screen and (max-width: 1000px) {
-    .articulo-item {
-      flex-basis: calc(33.33% - 20px);
+@media screen and (max-width: 1030px){
+    .articulo-item header h2 {
+        font-size: 18px;
+    }
+    .mask {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 850px) {
     .articulo-item {
       flex-basis: calc(50% - 20px);
     }
-}
-  
-@media screen and (max-width: 640px) {
-    .articulo-item {
-        flex-basis: calc(50% - 20px);
+
+    .mask {
+        display: flex;
+        align-items: center;
+        flex-direction: row; 
     }
 
     .headerInicio {
@@ -119,19 +139,22 @@
         align-items: flex-start;
         margin: 0 15px;
     }
-}
 
-@media screen and (max-width: 400px) {
     .articulo-item {
-      flex-basis:100%;
-      max-width: 95vh;
-    }
-    .listaArticulo {
-        justify-content: center;
+        flex-basis:100%;
+        max-width: 95vh;
     }
 
+
+    .listaArticulo {
+          justify-content: center;
+    }
+  
     .headerInicio{
-        margin: 0 55px;
+          margin: 0 55px;
     }
 }
+
+  
+
 
